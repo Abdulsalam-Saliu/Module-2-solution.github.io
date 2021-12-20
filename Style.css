@@ -1,0 +1,84 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url(meal.png);
+    color: white;
+    font-family: cursive, sans-serif;
+}
+h1{
+    color: blue;
+    position:absolute;
+    top:30%;
+    left:40%;
+    font-size:175%;
+    background-color: white;
+    display:inline;
+}
+.food{
+    border: 1px solid black;
+    margin: 15px;
+    float:left;
+    position: relative;
+    top:300px;}
+h2{
+    border:1px solid black;
+    display: inline;
+    font-size: 125%
+}
+#burger{
+    background-color: lightgreen;
+    float:right;
+}
+#pizza{
+    background-color: lightblue;
+    float:right;
+}
+#bread{
+    background-color:darkred;
+    float:right;
+}
+.burger{
+    background-color:darkgreen;
+    width: 30%;
+}
+.pizza{
+    background-color: lightblue;
+    width:30%;
+}
+.bread{
+    background-color:red;
+    width: 30%;
+}
+article{
+    clear:right;
+}
+@media (min-width:992px){
+    .burger,.pizza,.bread{
+        width:30%;
+    }
+}
+@media(min-width:761px) and (max-width:991px){
+    .burger,.pizza{
+        width:45%;
+    }
+   .bread{
+        width: 95%;
+    }
+    h1{
+        position: absolute;
+        left:40%;
+    }
+}
+@media(max-width: 767px){
+ .burger,.pizza,.bread{
+ width:95%;
+ }
+      h1{
+        position: absolute;
+          left:25%;
+     }
+  }
+
